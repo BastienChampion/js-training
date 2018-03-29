@@ -11,6 +11,10 @@
 
 // Your code :
 
+function abs(x){
+    return Math.abs(x);
+}
+
 //* Begin of tests
 const assert = require('assert')
 

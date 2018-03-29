@@ -3,10 +3,15 @@
 /*
  * Create a function `id` that takes one argument and return it
  *
+ * 
  * @notions Functions
  */
 
 // Your code :
+
+function id(argument){
+    return argument;
+};
 
 //* Begin of tests
 const assert = require('assert')
