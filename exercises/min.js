@@ -11,6 +11,16 @@
 
 // Your code :
 
+function min(a, b){
+    function minVal (a, b){
+        if ( a > b ){
+            return b;
+        } else {
+            return a;
+        }
+    } return minVal(a, b);
+}
+
 //* Begin of tests
 const assert = require('assert')
 

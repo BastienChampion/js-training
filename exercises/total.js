@@ -6,6 +6,14 @@
  *
  */
 
+ function total (array){
+    let i = 0;
+    let sum = 0;
+    while (i < array.length){ 
+        sum += array[i];
+        i++;
+    } return sum;
+ }
 
 //* Begin of tests
 const assert = require('assert')
