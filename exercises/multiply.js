@@ -11,15 +11,12 @@
 // Your code :
 
   function multiply(a, b) {
-    let sum = 0;
-    while (a) {
-        if (a & 1) {
-            sum += b;
-        }
-        a >>= 1;
-        b <<= 1;
+    if (a == 0 || b == 0) {
+        return 0;
+    } else if (b > 0) {
+        return a + multiply(a, b - 1);
     }
-    return sum;
+    return -multiply(a, -b);
 }
 
 //* Begin of tests
