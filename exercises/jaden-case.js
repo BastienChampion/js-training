@@ -8,10 +8,17 @@
  *
  */
 
-
+function jadenCase(string) {
+    let splitStr = string.toLowerCase().split(' ');
+    for (let i = 0; i < splitStr.length; i++) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+    }
+    return splitStr.join(' '); 
+ }
 
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(jadenCase('hello brother'), 'Hello Brother')
+assert.strictEqual(jadenCase('I am a wild coder !!'), 'I Am A Wild Coder !!')
 
-assert.fail('You must write your own tests')
 // End of tests */
